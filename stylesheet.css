@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(56, 56, 56, 0.671),
+      rgba(139, 15, 108, 0.73)
+    ),
+    url(gambar/Bali.jpg);
+
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.explore {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(139, 15, 108, 0.73);
+  position :fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+  width: 170px;
+  margin-top: 1px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display: none;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.lesson-wrapper h2{
+  text-align: left;
+  font-size: 45px;
+  text-decoration: underline;
+  color: #3b5998;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 33%;
+  padding-bottom: 50px;
+}
+
+.offers-card {
+  height: 320px;
+  width: 330px;
+}
+
+.offers-card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  height: inherit;
+}
+
+.offers-card-top {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-card-top img {
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.offers-card:hover .offers-card-image {
+  transform: scale(1.051);
+}
+
+.offers-card-title {
+  font-weight: bold;
+  color: var(--secondary-text);
+}
+.offers-card-bottom {
+  height: 100px;
+  background-color: #ffbcfa;
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offers-card-pricing {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-text);
+}
+.from-price {
+  display: flex;
+  align-items: center;
+}
+.from-price p {
+  font-size: 0.9rem;
+}
+.from-price .amount {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.details-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1.6rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.details-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.gallery-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+}
+.gallery-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.gallery-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-img img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: left;
+}
+
+.message-wrapper h2{
+  font-size: 45px;
+  text-decoration: underline;
+  color: #3b5998;
+}
+
+ooter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgba(139, 15, 108, 0.73);
+  align-items: center;
+}
+footer a,
+footer p,
+footer h4 {
+  color: var(--primary-text);
+}
+.footer-links-header {
+  margin-bottom: 0.51rem;
+  color: var(--primary-text);
+}
+.social-links {
+  display: flex;
+}
+.social-links img {
+  height: 2.5rem;
+  margin-right: 0.41rem;
+}
